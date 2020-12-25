@@ -3,18 +3,17 @@ import React from 'react'
 const User = ({user}) => {
     return (
         <div className="container">
-        <div style={{padding: '3px', color: 'black', verticalAlign: 'middle', display: 'flex',   justifyContent: 'center'}}>
-            <div className="ui card">
-                <div className="content">
-    <p className="header">{`${user.name.first} ${user.name.last}`}</p>
-    <div className="meta">
-      <p>{user.cell}</p>
-      <p>{user.email}</p>
-    </div>
-  </div>
+            <div style={{padding: '3px', color: 'black', verticalAlign: 'middle', display: 'flex',   justifyContent: 'center'}}>
+                <div className="ui card">
+                    <div className="content">
+                        <p className="header">{`${user.name.first} ${user.name.last}`}</p>
+                            <div className="meta">
+                            <p>{user.cell}</p>
+                            <p>{user.email}</p>
+                        </div>
+                    </div>
                 </div>
-
-        </div>
+            </div>
         </div>
     )
 }

@@ -3,6 +3,7 @@ import axios from 'axios'
 import Users from './components/Users'
 import Pagination from './components/Pagination'
 import { ITEM_PER_PAGE }  from './components/utils/ConstantVariable'
+import logo from './giphy.gif'
 
 const App = () => {
 
@@ -30,8 +31,8 @@ const App = () => {
 
     return (
         <div>
-            <h1>Pagination</h1>
-            {loading ? <p>Loading..</p> : <>
+            <h1 style={{padding: '20px', display: 'flex',   justifyContent: 'center'}}>Pagination</h1>
+            {loading ? <img src={logo} alt="Logo" /> : <>
                 <Users users={users} page={page} />
                 <Pagination totalPages={totalPages} handleClick={handleClick} />
             </>

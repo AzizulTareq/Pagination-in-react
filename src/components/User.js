@@ -2,6 +2,7 @@ import React from 'react'
 
 const User = ({user}) => {
     return (
+        <div className="container">
         <div style={{padding: '5px', color: 'black', verticalAlign: 'middle', display: 'flex',   justifyContent: 'center'}}>
             <div className="ui card">
                 <div className="content">
@@ -13,6 +14,7 @@ const User = ({user}) => {
   </div>
                 </div>
 
+        </div>
         </div>
     )
 }
